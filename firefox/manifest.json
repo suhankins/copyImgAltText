@@ -3,7 +3,7 @@
     "id": "{5a1ed050-29fe-43eb-9e3c-67cd9752a04b}",
     "name": "Copy image ALT text",
     "description": "Add a context menu option to copy ALT text",
-    "version": "1.0",
+    "version": "1.1",
     "permissions": ["activeTab", "scripting", "contextMenus", "clipboardWrite"],
     "background": {
         "scripts": ["src/background.js"]

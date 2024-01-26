@@ -3,13 +3,13 @@ chrome.runtime.onInstalled.addListener(() => {
         id: 'copy-alt-text',
         title: 'Copy alt text',
         type: 'normal',
-        contexts: ['image'],
+        contexts: ['image', 'video'],
     });
 });
 
 const findBySrcUrlAndCopyAltText = (srcUrl) => {
     const imgElement = document.querySelector(`[src="${srcUrl}"]`);
-    const altText = imgElement.alt;
+    const altText = imgElement.alt || imgElement.title || '';
     navigator.clipboard.writeText(altText);
 };
 

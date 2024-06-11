@@ -1,10 +1,12 @@
 {
     "name": "Copy image ALT text",
     "description": "Add a context menu option to copy ALT text",
-    "version": "1.2",
+    "version": "2.0",
     "permissions": ["activeTab", "scripting", "contextMenus", "clipboardWrite"],
     "firefox": {
-        "id": "{5a1ed050-29fe-43eb-9e3c-67cd9752a04b}",
+        "browser_specific_settings": {
+            "gecko": { "id": "{159243ec-64a9-470d-ac41-4ec94b886210}" }
+        },
         "manifest_version": 2,
         "background": {
             "scripts": ["worker.js"]

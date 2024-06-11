@@ -1,0 +1,6 @@
+{
+    "tasks": {
+        "build:chrome": "deno run build.ts chrome",
+        "build:firefox": "deno run build.ts firefox"
+    }
+}
